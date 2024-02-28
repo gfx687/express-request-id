@@ -1,0 +1,42 @@
+{
+  "name": "@gfx687/express-request-id",
+  "version": "1.0.2",
+  "description": "Express middleware to generate or propagate X-Request-ID request header.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "publish": "publish --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfx687/express-request-id.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "request-id"
+  ],
+  "author": "gfx687",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gfx687/express-request-id/issues"
+  },
+  "homepage": "https://github.com/gfx687/express-request-id#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.22",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "prettier": "3.2.5",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "express": "^4.18.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
