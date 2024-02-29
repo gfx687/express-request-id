@@ -10,9 +10,9 @@ declare global {
 }
 
 export type Options = {
-  generator?: ((request: Request) => string) | undefined;
-  headerName?: string | undefined;
-  setResponseHeader?: boolean | undefined;
+  generator?: (request: Request) => string;
+  headerName?: string;
+  setResponseHeader?: boolean;
 };
 
 export function requestID({
