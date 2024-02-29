@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "publish": "publish --dry-run"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
