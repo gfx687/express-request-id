@@ -3,7 +3,7 @@
 Middleware for [express](https://www.npmjs.com/package/express) to generate or propagate `X-Request-ID` (or other custom) request header.
 
 <a href="https://www.npmjs.com/package/@gfx687/express-request-id" rel="nofollow"><img alt="npm" src="https://img.shields.io/npm/v/@gfx687/express-request-id"></a>
-<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/npm/l/zod-express-middleware" alt="License"></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/npm/l/@gfx687/express-request-id" alt="License"></a>
 
 ## Installation
 
@@ -56,17 +56,18 @@ Middleware accepts options object of the following format:
 ```typescript
 type Options = {
   // default = node's crypto.randomUUID()
-  generator?: ((request: Request) => string) | undefined;
+  generator?: (request: Request) => string;
 
   // default = 'X-Request-ID'
-  headerName?: string | undefined;
+  headerName?: string;
 
   // default = true
-  setResponseHeader?: boolean | undefined;
+  setResponseHeader?: boolean;
 };
 ```
 
 Usage example:
+
 ```typescript
 app.use(
   requestID({
